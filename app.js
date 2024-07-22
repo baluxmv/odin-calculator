@@ -29,5 +29,9 @@ function operate(a, b, operator) {
     }
 }
 
+// Variables for each part of a calculator operation
+let a;
+let b;
+let operator;
 
 
