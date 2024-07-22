@@ -34,6 +34,8 @@ let a;
 let b;
 let operator;
 
+// Variables to store html elements
 const display = document.querySelector("display");
-const buttonsContainer = document.querySelector("buttons-container"); 
+const buttonsContainer = document.querySelector("buttons-container");
+ 
 
