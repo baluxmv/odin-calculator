@@ -29,10 +29,18 @@ function operate(a, b, operator) {
     }
 }
 
+// Function to reset values to default
+function reset() {
+    a = "";
+    b = "";
+    operator = "";
+    display.innerText = "Waiting for numbers";
+}
+
 // Variables for each part of a calculator operation
 let a = "";
 let b = "";
-let operator;
+let operator = "";
 
 // Variables to store HTML elements
 const display = document.querySelector("#display");
