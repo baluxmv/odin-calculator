@@ -34,4 +34,6 @@ let a;
 let b;
 let operator;
 
+const display = document.querySelector("display");
+const buttonsContainer = document.querySelector("buttons-container"); 
 
