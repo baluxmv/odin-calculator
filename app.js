@@ -45,17 +45,21 @@ let operator = "";
 // Variables to store HTML elements
 const display = document.querySelector("#display");
 const buttonsContainer = document.querySelector("#buttons-container");
-const numberButtons = buttonsContainer.querySelectorAll("#number-buttons-container"); 
 
-// Add event listener to each number button
-numberButtons.forEach(button => {
-    button.addEventListener('click', event => {
+// Buttons container event listener
+buttonsContainer.addEventListener("click", event => {
+    // Check if the clicked element is a number button within 
+    // the number-buttons-container
+    if (event.target.tagName === "BUTTON" && 
+        event.target.parentElement.id === "number-buttons-container") {
         if (display.innerText == "Waiting for numbers") {
             display.innerText = "";
         }
-    
+
         a += event.target.innerText;
         display.innerText = a;
-    });
+    }
 });
+
+
 
