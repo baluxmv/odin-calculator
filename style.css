@@ -6,4 +6,12 @@
     padding: 0;
 }
 
-
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 40px;
+    gap: 100px;
+    min-height: 100vh;
+}
