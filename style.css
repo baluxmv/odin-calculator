@@ -16,6 +16,36 @@ body {
     min-height: 100vh;
 }
 
-#display {
-    border: 1px solid black;
+#calculator {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
+
+#display {
+    padding: 5px;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 15px;
+}
+
+#buttons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px 5px;
+    min-width: 25vw;
+}
+
+.number-button {
+    color: blue;
+}
+
+.operation-button {
+    color: green;
+}
+
+#equals-button,
+#clear-button {
+    color: purple;
+}
+
